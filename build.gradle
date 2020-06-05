@@ -25,10 +25,10 @@ repositories {
 
 dependencies {
     testImplementation 'junit:junit:4.+'
-    testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.0.0'
+    // testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.0.0'
 }
 
-task run(type: JavaExec) {
-    main = 'com.example.Main'
-    classpath = configurations.compile + sourceSets.main.output
-}
+// task run(type: JavaExec) {
+//     main = 'com.example.Main'
+//     classpath = configurations.compile + sourceSets.main.output
+// }
