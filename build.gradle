@@ -1,23 +1,26 @@
-apply plugin: 'java'
-apply plugin: "jacoco"
-apply plugin: "org.sonarqube" version "2.7"
+// apply plugin: 'java'
+// apply plugin: "jacoco"
+// apply plugin: "org.sonarqube" version "2.7"
+
+plugins {
+    id "java"
+}
 
 javadoc.options.encoding = 'UTF-8'
 compileJava.options.encoding = 'UTF-8'
 
-jacoco {
-    toolVersion = "0.8.1"
-    reportsDir = file("$buildDir/customJacocoReportDir")
-}
+// jacoco {
+//     toolVersion = "0.8.1"
+//     reportsDir = file("$buildDir/customJacocoReportDir")
+// }
 
-jacocoTestReport {
-    reports {
-        xml.enabled false
-        csv.enabled false
-        html.destination file("${buildDir}/jacocoHtml")
-    }
-}
-
+// jacocoTestReport {
+//     reports {
+//         xml.enabled false
+//         csv.enabled false
+//         html.destination file("${buildDir}/jacocoHtml")
+//     }
+// }
 
 repositories {
     mavenCentral()
