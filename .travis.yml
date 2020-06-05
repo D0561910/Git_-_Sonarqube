@@ -2,8 +2,11 @@ language: java
 os: linux
 dist: xenial
 
-jdk: - openjdk11
+jdk: 
+    - openjdk11
 
-install: - gradle assemble
+install: 
+    - gradle assemble
 
-script: - gradle test
+script: 
+    - gradle test
