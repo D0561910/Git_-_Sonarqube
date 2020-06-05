@@ -5,6 +5,12 @@ apply plugin: "jacoco"
 javadoc.options.encoding = 'UTF-8'
 compileJava.options.encoding = 'UTF-8'
 
+plugin {
+    id "java"
+    id "jacoco"
+    id "org.sonarqube" version "2.7"
+}
+
 jacoco {
     toolVersion = "0.8.1"
     reportsDir = file("$buildDir/customJacocoReportDir")
@@ -31,4 +37,4 @@ dependencies {
 // task run(type: JavaExec) {
 //     main = 'com.example.Main'
 //     classpath = configurations.compile + sourceSets.main.output
-// }
+// } 2321f14d60109943f10b9aae583b1720fa4fd4c4
